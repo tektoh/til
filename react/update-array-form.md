@@ -1,5 +1,7 @@
 # 配列になったフォームの更新
 
+オブジェクトの参照がアクロバティックな気もするけどこれで動く。
+
 ```jsx
 hundleClick: function(event, item) {
   item.value = event.target.value
