@@ -3,7 +3,7 @@
 オブジェクトの参照がアクロバティックな気もするけどこれで動く。
 
 ```jsx
-hundleClick: function(event, item) {
+hundleChange: function(event, item) {
   item.value = event.target.value
   this.setState({items: this.state.items})
 }
@@ -12,13 +12,13 @@ render: function() {
   return (
     <form>
       {this.state.items.map(function (item) {
-        var _hundleClick = (function (event) {
-          this.hundleClick(event, item)
-        }).bind(this)
+        var _hundleChange = function (event) {
+          this.hundleChange(event, item)
+        }.bind(this)
         
         return (
           <div key={item.key}>
-            <input type="text" value={item.value} onClick={_hundleClick} />
+            <input type="text" value={item.value} onChange={_hundleChange} />
           </div>
         )
       }, this)}
