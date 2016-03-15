@@ -4,6 +4,6 @@
 
 |名前|理由|代替え案|
 |---|---|---|
-|type|STIの予約語|context|
+|type|モデルでSTIするためのカラム名|context|
 |transaction|ActiveRecordのクラスメソッド|bill|
 |method|FactoryGirlで死ぬ||
