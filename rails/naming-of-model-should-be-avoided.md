@@ -1,4 +1,4 @@
-# Railsで避けるべきモデルのネーミング
+# Railsで避けるべきモデル・カラムのネーミング
 
 ついうっかりつけてしまって積んだカラム名。
 
@@ -6,4 +6,4 @@
 |---|---|---|
 |type|STIの予約語|context|
 |transaction|ActiveRecordのクラスメソッド|bill|
-|method|FactoryGirlで積む||
+|method|FactoryGirlで死ぬ||
